@@ -1,20 +1,29 @@
 import React from 'react'
-import { StyleSheet, View, SafeAreaView, Text } from 'react-native'
+import { StyleSheet, View, Text } from 'react-native'
 
-const Card = () => {
-    const { container } = styles
+const Card = ({ backgroundColor, title }) => {
+    const { container, titleStyle } = styles
     return(
-        <SafeAreaView style={container}>
-            <View>
-                <Text>Card</Text>
-            </View>
-        </SafeAreaView>
+        <View style={[container, {backgroundColor: backgroundColor}]}>
+            <Text style={titleStyle}>{title}</Text>
+        </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        height: 120,
+        width: 220,
+        borderRadius: 14,
+        marginVertical: 5,
+        marginHorizontal: 8,
+        padding: 10,
+    },
+    titleStyle: {
+        fontSize: 14,
+        fontWeight: '700',
+        color: '#FFF',
+        textTransform: 'uppercase',
     }
 })
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, View, SafeAreaView, Text } from 'react-native'
 
-const Details = () => {
+const Details = ({ navigation }) => {
     const { container } = styles
     return(
         <SafeAreaView style={container}>

@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='List' headerMode='none' >
+      <Stack.Navigator initialRouteName='List' screenOptions={{headerShown: false}}  >
         <Stack.Screen name='List' component={List} />
         <Stack.Screen name='Details' component={Details} />
       </Stack.Navigator>

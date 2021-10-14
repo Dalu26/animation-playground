@@ -1,6 +1,6 @@
 const Data = [
     {
-    imageUri:"https://image.flaticon.com/tcons/png/128/2990/2990502.png",
+    imageUri:"https://image.flaticon.com/icons/png/128/2990/2990502.png",
     title: "Ukelele",
     id: "2990502",
     },
@@ -10,12 +10,12 @@ const Data = [
     id: "2990505",
     },
     {
-    imageUri: 'https://image.flaticon.con/tcons/pna/128/2990/2990508.png',
+    imageUri: 'https://image.flaticon.com/icons/png/128/2990/2990508.png',
     title: "Tikt",
     id: "2990508",
     },
     {
-    imageUri: "https://image.flaticon.com/Lcons/pna/128/2990/2990510.png",
+    imageUri: "https://image.flaticon.com/icons/png/128/2990/2990510.png",
     title: "Banana",
     id: "2990510",
     },
@@ -23,7 +23,31 @@ const Data = [
     imageUri:'https://image.flaticon.com/icons/png/128/2990/2990512.png',
     title: "Coconut tree",
     id: "2998512",
-    }
+    },
+    {imageUri: 'https://image.flaticon.com/icons/png/128/119/119436.png',
+    title: 'Coco',
+    id: "2998513",
+    },
+    {imageUri: 'https://image.flaticon.com/icons/png/128/119/119420.png',
+    title: 'Sun',
+    id: "2998514",
+    },    {imageUri: 'https://image.flaticon.com/icons/png/128/119/119431.png',
+    title: 'Flower',
+    id: "2998515",
+    },    {imageUri: 'https://image.flaticon.com/icons/png/128/119/119412.png',
+    title: 'Bug',
+    id: "2998516",
+    },    {imageUri: 'https://image.flaticon.com/icons/png/128/119/119414.png',
+    title: 'Horus',
+    id: "2998517",
+    },    {imageUri: 'https://image.flaticon.com/icons/png/128/119/119426.png',
+    title: 'Bust',
+    id: "2998518",
+    },
+    {imageUri: 'https://image.flaticon.com/icons/png/128/119/119441.png',
+    title: 'Pyramid',
+    id: "2998519",
+    },
 ]
 
 export default Data
