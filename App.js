@@ -8,14 +8,21 @@
 
 import React from 'react';
 import { SafeAreaView, StatusBar, StyleSheet, Text } from 'react-native';
+import { enableScreens } from 'react-native-screens';
+import { createSharedElementStackNavigator } from 'react-navigation-shared-element';
+import { NavigationContainer } from '@react-navigation/native';
+
+enableScreens()
+const Stack = createSharedElementStackNavigator()
 
 const App = () => {
 
   return (
-    <SafeAreaView>
-      <StatusBar barStyle={'dark-content'} />
-      <Text>Me</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
