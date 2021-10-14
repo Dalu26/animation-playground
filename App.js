@@ -7,42 +7,26 @@
  */
 
 import React from 'react';
-import { SafeAreaView, StatusBar, StyleSheet, Text } from 'react-native';
 import { enableScreens } from 'react-native-screens';
 import { createSharedElementStackNavigator } from 'react-navigation-shared-element';
 import { NavigationContainer } from '@react-navigation/native';
-
+import List from './src/transition_screens/List'
+import Details from './src/transition_screens/Details'
 enableScreens()
+
 const Stack = createSharedElementStackNavigator()
 
 const App = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen />
+      <Stack.Navigator initialRouteName='List' headerMode='none' >
+        <Stack.Screen name='List' component={List} />
+        <Stack.Screen name='Details' component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;
