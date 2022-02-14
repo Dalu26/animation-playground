@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 import FingerprintScanner from 'react-native-fingerprint-scanner'
+import { useTheme } from '@react-navigation/native'
 
 const Biometrics = () => {
     React.useEffect(() => {
@@ -10,6 +11,7 @@ const Biometrics = () => {
         return FingerprintScanner.release()
     }, [])
     const [BiometryType, setBiometryType] = React.useState(null)
+    const { colors } = useTheme()
 
     const getMessage = () => {
           if(BiometryType =='Face ID')
@@ -51,9 +53,9 @@ const Biometrics = () => {
         >
             <TouchableOpacity
                 onPress={() => showAuthenticationDialog()}>
-                <Text style={{marginBottom: 10}}>Authenticate</Text>
+                <Text style={{marginBottom: 10, color: colors.text}}>Authenticate</Text>
             </TouchableOpacity>
-            <Text>Biometry Type is {BiometryType}</Text>
+            <Text style={{color: colors.text}}>Biometry Type is {BiometryType}</Text>
         </View>
     )
 }
