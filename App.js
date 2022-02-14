@@ -12,6 +12,7 @@ import { createSharedElementStackNavigator } from 'react-navigation-shared-eleme
 import { NavigationContainer } from '@react-navigation/native';
 import List from './src/screens/transition_screens/List'
 import Details from './src/screens/transition_screens/Details'
+import Biometrics from './src/screens/Biometrics'
 enableScreens()
 
 const Stack = createSharedElementStackNavigator()
@@ -19,12 +20,13 @@ const Stack = createSharedElementStackNavigator()
 const App = () => {
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName='List' screenOptions={{headerShown: false}}  >
-        <Stack.Screen name='List' component={List} />
-        <Stack.Screen name='Details' component={Details} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    // <NavigationContainer>
+    //   <Stack.Navigator initialRouteName='List' screenOptions={{headerShown: false}}  >
+    //     <Stack.Screen name='List' component={List} />
+    //     <Stack.Screen name='Details' component={Details} />
+    //   </Stack.Navigator>
+    // </NavigationContainer>
+    <Biometrics />
   );
 };
 
