@@ -3,6 +3,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
@@ -20,6 +24,17 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
+        <!-- From here down is for unified deep linking -->
+        <intent-filter android:label="@string/app_name">
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <!-- 'animations' here is the name of the app package -->
+        <data android:scheme="app" android:host="animations" /> 
+        <!-- package closes -->
+        <data android:scheme="https" android:host="animations.page.link" />
+        </intent-filter>
+        <!-- Unified deep linking stops here, the 'host' is the link we're sharing to access the app -->
       </activity>
     </application>
 </manifest>

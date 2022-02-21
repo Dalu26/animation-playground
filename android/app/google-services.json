@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "264726985433",
+    "project_id": "animations-76790",
+    "storage_bucket": "animations-76790.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264726985433:android:b2a56168d51838c7601cc8",
+        "android_client_info": {
+          "package_name": "com.animations"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264726985433-jvp0f4c9fs2e9fv6q33hmf6m0p3qi8j5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.animations",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "264726985433-4af96pcq2c6oe2eciid0d7vvueitbc8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwNmgyJ1oLCJjvIPlJIFjNXJh9guVkFRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264726985433-4af96pcq2c6oe2eciid0d7vvueitbc8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
